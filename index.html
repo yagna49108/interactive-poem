@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Wind Remembers — an interactive poem about time, memory, and change.">
+    <title>The Wind Remembers | Interactive Poem</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="poem-container">
+
+        <header class="header">
+            <p class="eyebrow">AN EXPERIMENT IN WORDS & TIME</p>
+            <h1>The Wind Remembers</h1>
+            <p class="subtitle">An interactive poem about memory and change</p>
+        </header>
+
+        <div class="divider">
+            <span>✦</span>
+        </div>
+
+        <section class="poem" aria-label="The Wind Remembers poem">
+
+            <div class="stanza">
+                <p class="poem-line">The wind remembers what we forget,</p>
+                <p class="poem-line">The names we whispered, the promises kept.</p>
+                <p class="poem-line">It carries yesterday through the trees,</p>
+                <p class="poem-line">And leaves our secrets beneath the breeze.</p>
+            </div>
+
+            <div class="stanza">
+                <p class="poem-line">Some days arrive like a quiet song,</p>
+                <p class="poem-line">Some nights remind us where we belong.</p>
+                <p class="poem-line">The stars rearrange, the shadows depart,</p>
+                <p class="poem-line">But time leaves fingerprints on the heart.</p>
+            </div>
+
+            <div class="stanza">
+                <p class="poem-line">So let the wind turn every page,</p>
+                <p class="poem-line">Let moments wander beyond their cage.</p>
+                <p class="poem-line">For nothing stays, and nothing ends,</p>
+                <p class="poem-line">The world keeps moving, and the wind remembers.</p>
+            </div>
+
+        </section>
+
+        <div class="divider">
+            <span>✦</span>
+        </div>
+
+        <section class="interaction" aria-label="Poem interactions">
+
+            <p class="interaction-text">
+                Words change places, but their meaning remains.
+            </p>
+
+            <div class="buttons">
+                <button id="windButton" type="button">
+                    ✧ Let the wind move the lines
+                </button>
+
+                <button id="resetButton" type="button">
+                    Restore the poem
+                </button>
+            </div>
+
+            <p id="message" class="message" aria-live="polite">
+                The poem is waiting for the wind...
+            </p>
+
+        </section>
+
+        <footer>
+            <p>Written in moments. Remembered by the wind.</p>
+            <p class="footer-symbol">✦</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
