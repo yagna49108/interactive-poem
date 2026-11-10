@@ -1,0 +1,240 @@
+
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background:
+        radial-gradient(ellipse at top, #243653 0%, transparent 55%),
+        linear-gradient(135deg, #0b1422, #101d30, #080e19);
+
+    color: #e6eaf2;
+    font-family: Georgia, 'Times New Roman', serif;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 50px 20px;
+}
+
+
+
+.poem-container {
+    width: 100%;
+    max-width: 850px;
+    text-align: center;
+    padding: 45px 35px;
+
+    background: rgba(15, 28, 46, 0.65);
+    border: 1px solid rgba(190, 210, 240, 0.16);
+    border-radius: 18px;
+
+    box-shadow: 0 20px 70px rgba(0, 0, 0, 0.35);
+}
+
+
+
+.eyebrow {
+    color: #9db6d8;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 4px;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-size: clamp(38px, 7vw, 64px);
+    font-weight: normal;
+    font-style: italic;
+    color: #e5edfa;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+}
+
+.subtitle {
+    color: #aabbd2;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+
+
+.divider {
+    margin: 35px auto;
+    color: #a5bddf;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+
+
+.poem {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.stanza {
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.poem-line {
+    font-size: clamp(16px, 2.5vw, 20px);
+    line-height: 1.7;
+    color: #d4deed;
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease;
+    animation: appear 0.8s ease both;
+}
+
+.poem-line:hover {
+    color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* INTERACTION AREA */
+
+.interaction {
+    margin-top: 25px;
+}
+
+.interaction-text {
+    color: #aabbd2;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+button {
+    padding: 13px 22px;
+    border: 1px solid #7894b9;
+    border-radius: 30px;
+
+    background: #263c5a;
+    color: #ffffff;
+
+    font-size: 13px;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #3b587e;
+    border-color: #c1d8fa;
+    transform: translateY(-3px);
+}
+
+button:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 5px;
+}
+
+#resetButton {
+    background: transparent;
+    color: #c4d0e0;
+}
+
+#resetButton:hover {
+    background: #263c5a;
+}
+
+
+
+.message {
+    min-height: 24px;
+    margin-top: 22px;
+    font-size: 13px;
+    font-style: italic;
+    color: #a5bddf;
+}
+
+
+
+footer {
+    margin-top: 50px;
+    color: #8298b7;
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+
+.footer-symbol {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #a5bddf;
+}
+
+
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 12px;
+    }
+
+    .poem-container {
+        padding: 35px 18px;
+    }
+
+    .poem {
+        gap: 28px;
+    }
+
+    .poem-line {
+        line-height: 1.6;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
