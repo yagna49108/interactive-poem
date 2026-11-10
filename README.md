@@ -1,50 +1,29 @@
 # interactive-poem
 
-The Wind Remembers
-Interactive Poem
-AUTHOR: Yagna Javvaji
+The Wind Remembers Interactive Poem Author: Yagna Javvaji
 
-The Wind Remembers is an interactive digital poem
-about memory, time, and change.
+The Wind Remembers is an interactive digital poem about memory, time, and change. 
+Readers can play with it by rearranging its lines, using CSS and JavaScript.
+How it works:
+Press "Let the wind move the lines" to shuffle the lines randomly within each stanza. 
+Press "Restore the poem" to return it to its original order.
 
-The project uses CSS styling and
-JavaScript to allow readers to interact with
-the poem by rearranging its lines.
+Design choices:
+I chose a dark blue background to suggest night, memory, and quiet reflection. 
+The soft typography gives the poem a calm, literary feel. The animations are meant to echo the movement of wind and the passing of time.
 
-INTERACTION:
-The "Let the wind move the lines" button randomly
-rearranges the poem's lines within each stanza.
+Accessibility:
 
-The "Restore the poem" button returns the poem
-to its original order.
-
-DESIGN DECISIONS:
-The dark blue background represents nighttime,
-memory, and reflection.
-
-The soft typography creates a calm literary
-atmosphere.
-
-The animations represent the movement of wind
-and the passage of time.
-
-ACCESSIBILITY:
-- Semantic HTML structure
-- Keyboard-accessible buttons
-- Visible keyboard focus
-- Readable text contrast
-- Responsive mobile layout
-- Reduced-motion support
-- Screen-reader announcement for interactions
-
-PROJECT FILES:
-- index.html
-- style.css
-- script.js
-- README.txt
-
-LIVE WEBSITE:
+Semantic HTML structure
+Keyboard-accessible buttons
+Visible keyboard focus
+Readable text contrast
+Responsive layout for mobile
+Reduced-motion support
+Screen reader announcements for interactions
 
 
-GITHUB REPOSITORY:
+Live website:
+
+GitHub repository:
 
