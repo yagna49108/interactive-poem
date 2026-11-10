@@ -37,5 +37,4 @@ PROJECT FILES:
 
 Live website: https://yagna49108.github.io/interactive-poem/
 
-GitHub repository: https://github.com/yagna49108/interactive-poem/edit/main/README.md
-
+GitHub repository: https://github.com/yagna49108/interactive-poem/tree/main
